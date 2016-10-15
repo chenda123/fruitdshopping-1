@@ -9,4 +9,39 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- 配置数据库连接参数 -->
+  <servlet>
+  	<servlet-name>InitDBInfoServlet</servlet-name>
+  	<servlet-class>cn.fruitd.servlet.InitDBInfoServlet</servlet-class>
+  	<!-- 数据库连接驱动 -->
+  	<init-param>
+  		<param-name>dbdriver</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<!-- 数据库连接地址-->
+  	<init-param>
+  		<param-name>dburl</param-name>
+  		<param-value>jdbc:mysql://114.215.150.201:3306/fruitdshop</param-value>
+  	</init-param>
+  	<!-- 数据库连接用户 -->
+  	<init-param>
+  		<param-name>dbuser</param-name>
+  		<param-value>fruitd</param-value>
+  	</init-param>
+  	<!-- 数据库连接密码 -->
+  	<init-param>
+  		<param-name>dbpass</param-name>
+  		<param-value>fruitd</param-value>
+  	</init-param>
+  	<!-- 设置启动顺序，不可变更 -->
+  	<load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <!-- servlet注册 -->
+  <servlet-mapping>
+  	<servlet-name>InitDBInfoServlet</servlet-name>
+  	<url-pattern>/servlet/InitDBInfoServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
