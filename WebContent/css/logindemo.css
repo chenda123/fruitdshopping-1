@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+.form_div{
+	width:400px;
+	margin: 0 auto;
+	margin-top:300px;
+}
+.form_tr
+{
+	width:100%;
+	display:block;
+	line-height: 30px;
+}
+.form_label
+{
+	width:140px;
+	display: inline-block;
+	text-align: right;
+}
+input[type='text']
+{
+	width:240px;
+	height:30px;
+	margin-top:5px;
+}
