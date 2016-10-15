@@ -10,6 +10,5 @@
 <body>
 	<%=DBInfo.getDBDRIVER()%>
 	<%=DBInfo.getDBURL() %>
-	<%= %>
 </body>
 </html>
